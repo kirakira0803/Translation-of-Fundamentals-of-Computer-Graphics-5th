@@ -71,13 +71,13 @@ Typeset in Times by codeMantra
 
 目录
 
-[一、 简介 6](#简介)
+[一、 简介 ](#简介)
 
-[1.1 图形领域 6](#图形领域)
+[1.1 图形领域 ](#图形领域)
 
-[1.2 主要应用 7](#主要应用)
+[1.2 主要应用 ](#主要应用)
 
-[1.3 图形API 8](#图形api)
+[1.3 图形API ](#图形api)
 
 ![image](https://user-images.githubusercontent.com/41580525/158318705-27998ab7-0fc3-4d54-899c-9910dd2b7c48.png)
 
