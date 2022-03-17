@@ -81,7 +81,7 @@ Typeset in Times by codeMantra
 
 [1.4 图形管线(Graphics Pipeline)](#图形管线)
 
-[1.5 数值问题(Numerical Issues)](#1.5数值问题)
+[1.5 数值问题(Numerical Issues)](#1\.5数值问题)
 
 [1.6 效能(Efficiency)](#效能)
 
