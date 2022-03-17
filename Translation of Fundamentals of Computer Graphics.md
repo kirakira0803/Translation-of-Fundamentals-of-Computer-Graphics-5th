@@ -326,17 +326,17 @@ IEEE浮点数表示法的设计者做出了一些对程序员来说非常方便�
 映射，也称为函数，是数学和编程的基础。就像程序中的函数一样，数学中的映射会接受一种类型的参数，并将其映射到（返回）特定类型的对象。在程序中，我们称之为“类型”；在数学中，我们称之为集合。当我们有一个对象是集合的成员时，我们使用∈符号，例如：a ∈ <strong>S</strong>，它可以理解为“a是集合<strong>S</strong>的成员”。给定两个任意集合<strong>A</strong>和<strong>B</strong>，我门可以通过取这两个集合的笛卡尔积来创建第三个集合，表示为<strong>A</strong> × <strong>B</strong>。这个集合<strong>A</strong> × <strong>B</strong>由所有可能的有序对（a，b）组成，其中a ∈ <strong>A</strong>，b ∈ <strong>B</strong>。同时，为了简化我们使用<strong>A</strong>²来表示<strong>A</strong> × <strong>A</strong>。我们可以扩展笛卡尔积，从三个集合中创建一组所有可能的有序三元组，以此类推，我们可以从任意n个集合中创建有序n元组。
   常见又有趣的集合包括：
   
-  <strong>· R</strong>——实数集合；
+  ![image](https://user-images.githubusercontent.com/41580525/158834928-6d4a8c51-a20b-4bb4-b7ea-abab34d588a1.png)——实数集合；
   
-  <strong>· R</strong>⁺——非负实数（包括零）；
+  ![image](https://user-images.githubusercontent.com/41580525/158835001-970d42c9-984b-4729-aed2-6716f014ef27.png)——非负实数（包括零）；
   
-  <strong>· R</strong>²——二维平面上的有序对；
+  ![image](https://user-images.githubusercontent.com/41580525/158835075-eae35ae2-74fa-4b53-90c6-852c3083014a.png)——二维平面上的有序对；
   
-  <strong>· R</strong>ⁿ——n维笛卡尔空间中的点；
+  ![image](https://user-images.githubusercontent.com/41580525/158835207-ed0bba00-e177-4f58-96ff-77ca589de493.png)——n维笛卡尔空间中的点；
   
-  <strong>· Z</strong>——整数；
+  ![image](https://user-images.githubusercontent.com/41580525/158835267-1a4697dc-3924-4e11-a7d1-214c06a55a6d.png)——整数；
   
-  <strong>· S</strong>²——单位球体上的一组三维点（<strong>R</strong>³中的点）
+  ![image](https://user-images.githubusercontent.com/41580525/158835375-3a11b683-1855-40cd-a298-97bdae1c09c7.png)——单位球体上的一组三维点（<strong>R</strong>³中的点）
   
 
 
