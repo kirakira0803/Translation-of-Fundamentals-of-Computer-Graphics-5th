@@ -2,7 +2,7 @@
 
 翻译：kirakira0803
 
-校对：
+校对：huangzhy65
 
 如有疑惑联系邮箱gaoyl0803@qq.com
 
