@@ -89,7 +89,7 @@ Typeset in Times by codeMantra
 
 [二、 各种各样的数学知识(Miscellaneous Math)](#各种各样的数学知识)
 
-
+#
 
 ![image](https://user-images.githubusercontent.com/41580525/158318705-27998ab7-0fc3-4d54-899c-9910dd2b7c48.png)
 
@@ -298,6 +298,8 @@ IEEE浮点数表示法的设计者做出了一些对程序员来说非常方便�
   有许多与计算机图形学相关的年度会议，包括ACM SIGGRAPH和SIGGRAPH Asia，Graphics Interface，the Game Developers Conference（GDC），Eurographics，Pacific Graphics，High Performance Graphicsthe Eurographics Symposium on Rendering，和IEEE VisWeek。通过网络搜索它们的名字可以很容易地找到。
 
 [返回目录](#目录) [返回本章开头](#简介) [返回本大节开头](#设计和编码图形程序) [返回本小节开头](#调试图形程序)
+
+#
 
 ![image](https://user-images.githubusercontent.com/41580525/158731005-0d1b9478-44c9-452c-a1fb-498d4fffabab.png)
 
