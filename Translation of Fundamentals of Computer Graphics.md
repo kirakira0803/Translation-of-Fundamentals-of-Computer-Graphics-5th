@@ -91,6 +91,8 @@ Typeset in Times by codeMantra
 
 [2.1 集合和映射(Sets and Mappings)](#集合和映射)
 
+[2.2 解二次方程(Solving Quadratic Equations)](#解二次方程)
+
 ***
 
 ![image](https://user-images.githubusercontent.com/41580525/158318705-27998ab7-0fc3-4d54-899c-9910dd2b7c48.png)
@@ -438,7 +440,7 @@ IEEE浮点数表示法的设计者做出了一些对程序员来说非常方便�
 
 两边同时减去![math-20220318](https://user-images.githubusercontent.com/41580525/159025454-958a2b6d-828b-4434-b8df-c2a187413528.png)并用分母![math-20220318](https://user-images.githubusercontent.com/41580525/159025553-5595ad43-d577-4dbe-a197-d7123671b179.png)构造了一个熟悉的形式：
 
-![math-20220318](https://user-images.githubusercontent.com/41580525/159025871-77e8ff8b-156d-43fb-8ffe-4c3db769b45e.png)（2.1）一个健壮的实现是使用等价的表达式![math-20220318 (1)](https://user-images.githubusercontent.com/41580525/159026585-5fc47759-c21f-4441-be5f-beb8995332f5.png)来计算其中一个根，具体取决于![math-20220318 (2)](https://user-images.githubusercontent.com/41580525/159026701-1c8698a6-8be6-4527-a98d-c1d68a7ddbe5.png)的符号（练习7）。
+![math-20220318](https://user-images.githubusercontent.com/41580525/159025871-77e8ff8b-156d-43fb-8ffe-4c3db769b45e.png)（2.1）一个更好的实现是使用等价的表达式![math-20220318 (1)](https://user-images.githubusercontent.com/41580525/159026585-5fc47759-c21f-4441-be5f-beb8995332f5.png)来计算其中一个根，具体取决于![math-20220318 (2)](https://user-images.githubusercontent.com/41580525/159026701-1c8698a6-8be6-4527-a98d-c1d68a7ddbe5.png)的符号（练习7）。
 
 “![math-20220318](https://user-images.githubusercontent.com/41580525/159028155-a09951a5-f18f-4b79-9aa1-011983f7885b.png)”符号意味着这里有两个解，一个是加号，一个是减号，如3±1等于 “二或四”。请注意，决定实数解数量的项是：
 
