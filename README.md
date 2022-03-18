@@ -1,4 +1,4 @@
-[点击开始阅读](Translation of Fundamentals of Computer Graphics.md)
+[点击开始阅读](https://github.com/kirakira0803/Translation-of-Fundamentals-of-Computer-Graphics-5th/blob/main/Translation%20of%20Fundamentals%20of%20Computer%20Graphics.md)
 
 个人翻译，如有错误望大家指正。
 
