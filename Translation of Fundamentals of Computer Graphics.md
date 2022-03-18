@@ -413,15 +413,42 @@ IEEE浮点数表示法的设计者做出了一些对程序员来说非常方便�
 
 [返回目录](#目录) [返回本章开头](#各种各样的数学) [返回本大节开头](#集合和映射) [返回本小节开头](#对数)
 
+## 2.2
+## 解二次方程
 
+二次方程的形式为：
 
+![math-20220318](https://user-images.githubusercontent.com/41580525/159018891-95771520-7d12-4804-814b-29a37471a3a2.png)
 
+其中![math-20220318](https://user-images.githubusercontent.com/41580525/159019333-b088b81c-122e-491e-821e-517571b4d9c4.png)是一个实数未知量，而![math-20220318](https://user-images.githubusercontent.com/41580525/159019403-b23be597-a4e8-40ac-b37d-cb82fc491332.png)，![math-20220318](https://user-images.githubusercontent.com/41580525/159019477-0cc2693a-1492-4817-870c-f83f94c75a37.png)和![math-20220318](https://user-images.githubusercontent.com/41580525/159019539-56dd8c78-d244-4bef-bc34-c08ba07eedb1.png)是已知常数。如果你想象一个二维xy的平面图，上面画着![math-20220318](https://user-images.githubusercontent.com/41580525/159019923-605fc131-cc70-4489-8d35-dcd76109d1bd.png)，那么它的解就是函数图像与![math-20220318](https://user-images.githubusercontent.com/41580525/159022005-773562e9-1803-4239-b303-017a1faa61f3.png)处的“交叉点”。因为![math-20220318](https://user-images.githubusercontent.com/41580525/159020191-9f319740-804f-4c98-b66f-7127e278d21a.png)是一条抛物线，根据抛物线的位置（图2.5），将有零、一或两个实数解，这取决于抛物线是否偏离、擦过或击中x轴。
 
+![image](https://user-images.githubusercontent.com/41580525/159022722-fab515e1-4650-4ca0-b8fc-d5a5071788c7.png)图2.5，二次方程根的几何解释是抛物线与x轴的交点。
 
+为了解析如何解二次元方程，我们首先除以![math-20220318](https://user-images.githubusercontent.com/41580525/159023773-33847565-36ac-4ab5-aeb8-42fa51c6b156.png):
 
+![math-20220318](https://user-images.githubusercontent.com/41580525/159023939-69292982-daf1-4897-8a8c-01091bee2dab.png)
 
+然后，我们用“完全平方”将它们变化分组：
 
+![math-20220318](https://user-images.githubusercontent.com/41580525/159024543-d990ea02-8208-4e01-98b6-4dd109e9ea00.png)
 
+将常数部分移到右边，并开平方：
+
+![math-20220318](https://user-images.githubusercontent.com/41580525/159025164-9c668423-5f4d-4b60-a7ea-b266151f1196.png)
+
+两边同时减去![math-20220318](https://user-images.githubusercontent.com/41580525/159025454-958a2b6d-828b-4434-b8df-c2a187413528.png)并用分母![math-20220318](https://user-images.githubusercontent.com/41580525/159025553-5595ad43-d577-4dbe-a197-d7123671b179.png)构造了一个熟悉的形式：
+
+![math-20220318](https://user-images.githubusercontent.com/41580525/159025871-77e8ff8b-156d-43fb-8ffe-4c3db769b45e.png)（2.1）一个健壮的实现是使用等价的表达式![math-20220318 (1)](https://user-images.githubusercontent.com/41580525/159026585-5fc47759-c21f-4441-be5f-beb8995332f5.png)来计算其中一个根，具体取决于![math-20220318 (2)](https://user-images.githubusercontent.com/41580525/159026701-1c8698a6-8be6-4527-a98d-c1d68a7ddbe5.png)的符号（练习7）。
+
+“![math-20220318](https://user-images.githubusercontent.com/41580525/159028155-a09951a5-f18f-4b79-9aa1-011983f7885b.png)”符号意味着这里有两个解，一个是加号，一个是减号，如3±1等于 “二或四”。请注意，决定实数解数量的项是：
+
+![math-20220318](https://user-images.githubusercontent.com/41580525/159028355-ea588bf5-9554-4cf6-832c-c7f6f0bc8e60.png)
+
+这就是二次方程的判别式，如果![math-20220318](https://user-images.githubusercontent.com/41580525/159029584-11fc1b06-c5c3-4c56-8e58-3e193bdc0b3a.png)，则有两个实数解（也称为根）；如果![math-20220318 (1)](https://user-images.githubusercontent.com/41580525/159029692-68948898-6443-4a6c-9484-bcd04f95facd.png)，则有一个实数解（“两”个根）。如果![math-20220318](https://user-images.githubusercontent.com/41580525/159029862-8120b31b-8cc2-4677-8b47-4a4cc6145118.png)，那就没有实数解。
+
+  例如，![math-20220318](https://user-images.githubusercontent.com/41580525/159030522-ef57dd06-42de-4bc3-bedc-2f05d1a1e1dd.png)的根是![math-20220318 (1)](https://user-images.githubusercontent.com/41580525/159030630-5dce34a6-e6a1-4de6-81da-525c209a9108.png)和![math-20220318](https://user-images.githubusercontent.com/41580525/159030661-3425d091-4aa8-428f-921c-b500d86bd571.png)，方程![math-20220318 (1)](https://user-images.githubusercontent.com/41580525/159030736-f5497b16-f8f1-4beb-9f8e-00e3a29f99b1.png)没有实数解，这些方程的判别式分别为![math-20220318](https://user-images.githubusercontent.com/41580525/159031040-8bb8298c-3166-407c-8dfe-94541c856a10.png)和![math-20220318 (1)](https://user-images.githubusercontent.com/41580525/159031076-266e00df-3770-4352-953f-280dff3cf05f.png)，所以我们可以预判解的个数。在程序中，通常最好先计算![math-20220318](https://user-images.githubusercontent.com/41580525/159031238-da70a8e0-2842-4d84-9bcd-12f2245c35ba.png)，如果![math-20220318](https://user-images.githubusercontent.com/41580525/159031238-da70a8e0-2842-4d84-9bcd-12f2245c35ba.png)为负，则返回“无根”，而不取平方根。
+
+[返回目录](#目录) [返回本章开头](#各种各样的数学) [返回本节开头](#解二次元方程)
 
 
 
