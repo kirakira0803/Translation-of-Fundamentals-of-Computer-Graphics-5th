@@ -1,3 +1,5 @@
+[点击开始阅读](#Translation of Fundamentals of Computer Graphics.md)
+
 个人翻译，如有错误望大家指正。
 
 翻译：kirakira0803
