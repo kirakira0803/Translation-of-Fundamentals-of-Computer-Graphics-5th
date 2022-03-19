@@ -95,6 +95,8 @@ Typeset in Times by codeMantra
 
 [2.3 三角学(Trigonometry)](#三角学)
 
+[2.4 向量(Vectors)](#向量)
+
 ***
 
 ![image](https://user-images.githubusercontent.com/41580525/158318705-27998ab7-0fc3-4d54-899c-9910dd2b7c48.png)
@@ -466,7 +468,7 @@ IEEE浮点数表示法的设计者做出了一些对程序员来说非常方便�
 
 ![image](https://user-images.githubusercontent.com/41580525/159103575-27725ca5-85e2-4158-bdf8-58134e644205.png)图2.6，两条半直线将单位圆切割成两个圆弧，任一圆弧的长度都是两条半直线之间的有效角度。我们可以采用较小的长度为角度的惯例，或者两条半直线按顺序指定，以确定角度![math-20220319](https://user-images.githubusercontent.com/41580525/159103684-4e068797-2fcf-4e5f-932a-df99fcf6875e.png)的弧是从第一条半直线到第二条半直线逆时针扫出的弧。
 
-  这些角度中的每一个都是被两个方向“切割”的单位圆弧的长度，因为单位圆的周长是![math-20220319](https://user-images.githubusercontent.com/41580525/159103017-63513e19-eecb-4aed-af86-13e6c25afb3f.png)，所以两个可能的角度之和为![math-20220319](https://user-images.githubusercontent.com/41580525/159103017-63513e19-eecb-4aed-af86-13e6c25afb3f.png)。这些弧长的单位是弧度，另一个常用单位是度，其中圆的周长为![math-20220319](https://user-images.githubusercontent.com/41580525/159103088-6a055277-0947-465d-9014-8ecca72ca5fd.png)。因此，弧度![math-20220319](https://user-images.githubusercontent.com/41580525/159103113-9a8dcbb0-19f5-48d0-be10-465c0812f668.png)表示的角度为![math-20220319](https://user-images.githubusercontent.com/41580525/159103134-682dcc67-f391-4c1c-a9b8-fdd6b077ef8b.png)。度（degrees）和弧度（radians）之间的转换是：
+  这些角度中的每一个都是被两个方向“切割”的单位圆弧的长度，因为单位圆的周长是![math-20220319](https://user-images.githubusercontent.com/41580525/159103017-63513e19-eecb-4aed-af86-13e6c25afb3f.png)，所以两个可能的角度之和为![math-20220319](https://user-images.githubusercontent.com/41580525/159103017-63513e19-eecb-4aed-af86-13e6c25afb3f.png)。这些弧长的单位是弧度，另一个常用单位是度，其中圆的周长为![math-20220319](https://user-images.githubusercontent.com/41580525/159103088-6a055277-0947-465d-9014-8ecca72ca5fd.png)。因此，弧度![math-20220319](https://user-images.githubusercontent.com/41580525/159103113-9a8dcbb0-19f5-48d0-be10-465c0812f668.png)表示的角度为![math-20220319](https://user-images.githubusercontent.com/41580525/159103134-682dcc67-f391-4c1c-a9b8-fdd6b077ef8b.png)。度（degree）和弧度（radian）之间的转换是：
   
 ![math-20220319 (1)](https://user-images.githubusercontent.com/41580525/159103539-955ba5cb-5d06-450c-9033-1e83283c3818.png)
 
@@ -503,3 +505,58 @@ IEEE浮点数表示法的设计者做出了一些对程序员来说非常方便�
 
 [返回目录](#目录) [返回本章开头](#各种各样的数学) [返回本大节开头](#三角学) [返回本小节开头](#三角函数)
 
+### 2.3.3
+### 有用的恒等式
+
+本章列出了各种有用的三角恒等式，无需推导。
+
+<strong>变换恒等式（Shifting identities）：</strong>
+
+![math-20220319](https://user-images.githubusercontent.com/41580525/159123620-083e8e75-db21-4120-911d-e25e11176a55.png)
+
+<strong>勾股恒等式（Pythagorean identities）：</strong>
+
+![math-20220319 (1)](https://user-images.githubusercontent.com/41580525/159123728-d5d17435-a398-479a-9b7e-58d30461bcc7.png)
+
+<strong>加减恒等式（Addition and subtraction identities）：</strong>
+
+![math-20220319](https://user-images.githubusercontent.com/41580525/159124010-a2763908-e3aa-4193-b61f-f993e585520f.png)
+
+<strong>半角恒等式（Half-angle identities）：</strong>
+
+![math-20220319](https://user-images.githubusercontent.com/41580525/159124086-eefb01e5-cb88-4832-b871-14d884382aac.png)
+
+<strong>积恒等式（Product identities）：</strong>
+
+![math-20220319 (1)](https://user-images.githubusercontent.com/41580525/159124293-2625fb8b-8dd6-4d5e-9947-4fa2b15817fb.png)
+
+以下恒等式适用于边长为![math-20220319](https://user-images.githubusercontent.com/41580525/159124367-d94cc212-d1fa-4ce9-9810-757ab8d0321a.png)，![math-20220319](https://user-images.githubusercontent.com/41580525/159124386-29e03c87-6bf1-491f-92f8-e1e126a5b811.png)和![math-20220319 (1)](https://user-images.githubusercontent.com/41580525/159124400-7625ab7d-20c4-4b42-8957-93c7cba91eba.png)的任意三角形，而三角形的角度分别由![math-20220319](https://user-images.githubusercontent.com/41580525/159124421-d2088c54-b293-4b8c-bcad-b3aa7cfe882c.png)，![math-20220319 (1)](https://user-images.githubusercontent.com/41580525/159124433-59b24ec3-2e1b-46fd-a9b4-56f9a48efa4f.png)和![math-20220319](https://user-images.githubusercontent.com/41580525/159124475-b34d755b-0313-4f02-854f-bc5dd14ff789.png)给出（如图2.10）。
+
+![image](https://user-images.githubusercontent.com/41580525/159124532-0912064f-798b-4972-9181-77e3bce5ab2f.png)图2.10，三角定律的几何图形。![math-20220319](https://user-images.githubusercontent.com/41580525/159124827-cca13d5a-fcbb-473a-8539-0d17a7144289.png)
+
+三角形的面积（Triangle area）也可以用这些边长来计算：
+
+![math-20220319 (1)](https://user-images.githubusercontent.com/41580525/159124903-89bb955e-4fb5-447b-a260-d8228d809afb.png)
+
+[返回目录](#目录) [返回本章开头](#各种各样的数学) [返回本大节开头](#三角学) [返回本小节开头](#有用的恒等式)
+
+### 2.3.4
+### 立体角与球面三角学
+
+本大节中的传统三角学涉及的都是平面上的三角形，而三角形也可以定义在非平面表面上，在许多领域都会出现，例如在天文学中，会出现单位半径球面上的三角形。这些球面三角形的边是球面上大圆（单位半径圆）的一部分，对这些三角形的研究是一个叫做球面三角学的领域，在图形学中并不常用，但有时，当它出现时，它是至关重要的。我们在这里不讨论它的细节，但希望读者知道，当这些问题确实出现时，有这样一个领域的存在，其中有很多有用的定理，比如余弦球面定理和正弦球面定理。有关所使用的的球面三角学原理的示例，请参与关于采样三角形灯光（投影到球面三角形）的论文（Arvo，1995b）。
+
+对于计算机图形学来说，更重要的是立体角。角度可以让我们量化一些东西，比如说“在我的视野中，这两根柱子的距离是多少”，而立体角度可以让我们量化一些别的东西，比如“那架飞机覆盖了我多少视野”。对于传统角度，我们将柱子投影到单位圆上，并在单位圆上测量柱子之间的弧长。我们经常使用角度，以至于我们中的许多人都会忘记这个定义，因为对我们来说，它是如此的直观。立体角度同样简单，但它们可能看起来更令人困惑，因为我们大多数人都是在成年以后学习它们的。对于立体角度，我们投射“看到”飞机的可见方向，并将其投射到单位球体上，然后测量面积。这个区域的面积是立体角度，就像弧长是角度一样。角度以弧度（radian）为单位测量，总和为![math-20220319](https://user-images.githubusercontent.com/41580525/159125631-f309347a-1cf7-4e42-9208-284ce8fc5232.png)（单位圆的总长度），而立体角度以立体弧度（steradian）为单位测量，总和为![math-20220319](https://user-images.githubusercontent.com/41580525/159125756-76631234-8343-4d93-92d8-851983047b74.png)（单位球体的总面积）。
+
+[返回目录](#目录) [返回本章开头](#各种各样的数学) [返回本大节开头](#三角学) [返回本小节开头](#立体角与球面三角学)
+
+## 2.4
+## 向量
+
+向量描述长度和方向，它可用箭头表示。如果两个向量的长度和方向相同，即使我们认为它们处于不同的地方，它们也是相等的（图2.11）。你应该尽可能地把向量看作一个箭头，而不是坐标或者数字。在某些情况下，我们必须在程序中将向量表示为数字，但即使在代码中是这样，它们也应该作为对象（objects）来处理，只有低级向量操作才应该关注它们的数字表示（DeRose，1989）。向量将用粗体字符表示，例如![math-20220319 (1)](https://user-images.githubusercontent.com/41580525/159126187-196e0515-0d35-4405-9dad-a4688ab78bd3.png)，一个向量的长度用![math-20220319](https://user-images.githubusercontent.com/41580525/159126258-e72d8fa3-8e26-4206-92d2-73825c06cb03.png)表示。单位向量是长度为一的任何向量。零向量是长度为零的向量，且零向量的方向未定义。
+
+  向量可以用来表示许多不同的事物，例如，它们可以用于存储偏移（offset），也称为位移（displacement）。如果我们知道“宝藏埋在秘密会面地点以东两步和以北三步的地方”，那么我们就知道了偏移量，但不知道从哪里开始。向量也可以用来存储方位（location），也就是位置（position）或点（point）的另一个词。位置可以表示为从另一个位置过来的偏移，通常，有一些已知的原点位置，所有其他位置都存储为偏移。请注意，位置不是向量。正如我们将要讨论的，你可以将两个向量相加，然而，在计算一个位置的加权平均数时，将两个位置相加通常没有意义，除非这是一个中间操作（Goldman，1985）。将两个偏移相加是有意义的，所以这就是偏移是向量的原因之一，但这也强调了位置并不是偏移；它是相对于特定原点位置的偏移，偏移本身并不是位置。
+
+### 2.4.1
+### 向量操作
+
+[返回目录](#目录) [返回本章开头](#各种各样的数学) [返回本大节开头](#向量) [返回本小节开头](#向量操作)
