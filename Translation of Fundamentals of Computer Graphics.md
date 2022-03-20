@@ -648,4 +648,100 @@ IEEE浮点数表示法的设计者做出了一些对程序员来说非常方便�
 ### 2.4.4
 ### 叉乘
 
+叉积![math-20220320](https://user-images.githubusercontent.com/41580525/159161605-f4494bf1-da68-4e95-bb73-2f26d51a875e.png)通常仅用于三维向量；一般化的叉积在章节注释中给出的参考文献中进行了讨论。叉积返回一个与叉积的两个参数向量垂直的三维向量，结果的长度与![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159161668-ec06d042-b658-49cf-9abc-2741d2e56de6.png)有关：
+
+![math-20220320](https://user-images.githubusercontent.com/41580525/159161718-b5857d8d-a6c3-4b8a-b142-163643835fa4.png)
+
+叉积结果的模![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159161792-3ca6e3b6-b501-4b18-a3f0-98bf9219a268.png)等于向量![math-20220320](https://user-images.githubusercontent.com/41580525/159161819-0d03699b-2190-4c51-93bd-5addb63db830.png)和![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159161834-ea05bb76-fb1d-4473-b6df-962f384f17ea.png)形成的平行四边形的面积。此外，![math-20220320](https://user-images.githubusercontent.com/41580525/159161878-4855dc16-656f-4a22-9a2c-5d46c12114e5.png)垂直于![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159161892-cf92fdbd-fa1d-4e16-b4d2-f96506e32368.png)和![math-20220320](https://user-images.githubusercontent.com/41580525/159161900-511b5d61-90b2-40d3-83a2-0c6be3dd02ac.png)（图2.19）。
+
+![image](https://user-images.githubusercontent.com/41580525/159162011-4f8de310-dcec-404b-83b3-e7c1eaa39623.png)图2.19，叉积![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159162085-1cfac7c7-69f5-4647-890c-adc8bee6de52.png)是垂直于三维向量![math-20220320](https://user-images.githubusercontent.com/41580525/159162098-c5e0042d-8ad1-4f0a-b733-8d3849c796df.png)和![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159162106-8370c770-8600-4ce0-9428-49c2c206b442.png)的三维向量，其长度等于所示平行四边形的面积。
+
+请注意，对于这样一个向量，只有两个可能的方向。根据定义，x轴、y轴和z轴方向上的向量由下式给出：
+
+![math-20220320](https://user-images.githubusercontent.com/41580525/159162167-8265a1eb-7693-483e-b080-e396b69021c1.png)
+
+我们设定了一个惯例，![math-20220320](https://user-images.githubusercontent.com/41580525/159162260-bb19a761-a564-45a3-b9ed-c1fc73d0162f.png)必须在正负![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159162489-98f98da8-6943-4acd-8e37-c2cd18c5d117.png)方向。虽然这个做法有点随意，但标准的做法是假定：
+
+![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159162305-73bd6e6f-859e-4101-85d5-a82c4f5ff32b.png)
+
+三个笛卡尔单位向量的所有可能排列如下：
+
+![math-20220320 (3)](https://user-images.githubusercontent.com/41580525/159162673-11efaebe-6a8e-4183-9cab-f7c6e1ad1e7a.png)
+
+由于![math-20220320](https://user-images.githubusercontent.com/41580525/159162765-6c976e2d-67f2-463d-81be-643ea41946b3.png)的性质，我们知道向量和自身进行叉积得到的就是零向量，所以![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159162810-ee454a0b-80ed-4303-9ae4-21e6b8b85951.png)，以此类推。注意，叉积是不可交换的，即![math-20220320](https://user-images.githubusercontent.com/41580525/159162865-4993e08b-1dc8-471d-8981-fe2807dfe53a.png)。仔细的读者会注意到，上面的讨论不允许我们对笛卡尔坐标轴的关系做出明确的描述。更具体地说，如果我们把![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159162941-9fb7caa7-be0d-40e5-bd4c-5d93c4620720.png)和![math-20220320](https://user-images.githubusercontent.com/41580525/159162953-2d84f40e-4c8a-49e2-afcf-e3ab5e5b212d.png)放在人行道上，![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159162941-9fb7caa7-be0d-40e5-bd4c-5d93c4620720.png)指向东方，![math-20220320](https://user-images.githubusercontent.com/41580525/159162953-2d84f40e-4c8a-49e2-afcf-e3ab5e5b212d.png)指向北方，那么![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159162977-64122905-7f77-488c-92c2-c79ef2e59aad.png)是指向天空还是地面？通常的惯例是让![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159162977-64122905-7f77-488c-92c2-c79ef2e59aad.png)指向天空，这就是所谓的右手坐标系。这个名字来自于用右手手掌和手指指向![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159163074-a0679b37-c297-497d-a870-74ef8fadba3f.png)的正方向，然后向![math-20220320](https://user-images.githubusercontent.com/41580525/159163091-7297afcd-8752-4417-8fc8-7f3d8b16417a.png)方向旋转弯曲手指的记忆模式，向量![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159163115-447b64c6-1ac0-4cee-8618-6b70a41a8e1d.png)应该与拇指对齐，如图2.20所示。
+
+![image](https://user-images.githubusercontent.com/41580525/159163137-0a489b81-7d28-4bfa-be82-1f35c20ad65b.png)图2.20，叉积的“右手法则”。想象一下，将右手掌心离身体近的部分放在原点处，手指指向![math-20220320](https://user-images.githubusercontent.com/41580525/159163300-bfd8f8d9-8f17-4ce4-b18a-80f0aa4d75b0.png)的箭头处，然后向![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159163316-e61650e5-bd0b-4021-a5ef-86f70a71453f.png)所在的方向弯曲，那么此时大拇指的方向就是![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159163331-d8fc93bf-3f94-48a4-b5d7-4b6f79bde248.png)的方向，反之则是![math-20220320](https://user-images.githubusercontent.com/41580525/159163350-92fac28d-c8d5-43d2-bdcb-02eeeecd1675.png)的方向。
+
+叉积有一个很好的性质：
+
+![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159163411-122212f7-685b-4a7c-823a-92625e573e7b.png)以及![math-20220320](https://user-images.githubusercontent.com/41580525/159163548-7f695a86-bd4b-4022-8257-d1587029c970.png)
+
+然而，右手法则的一个后果是:
+
+![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159163563-2fd60356-9ff8-4ed7-8bb7-b647d4b6709f.png)
+
+在笛卡尔坐标系中，我们可以使用显式展开来计算叉积：
+
+![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159163813-96eb56f0-c3d3-4de6-8de3-bf17b1414e15.png)
+
+所以，以坐标形式可以写为：
+
+![math-20220320](https://user-images.githubusercontent.com/41580525/159163881-aba669db-619e-42bd-bf17-f4054f4a315e.png)
+
 [返回目录](#目录) [返回本章开头](#各种各样的数学) [返回本大节开头](#向量) [返回本小节开头](#叉乘)
+
+### 2.4.5
+### 正交基和坐标系
+
+管理坐标系统几乎是任何图形程序的核心任务之一，而其中的关键是管理正交基。任何一对二维向量![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159164016-160843a6-79b8-4cf7-8140-b1ed7c21ddc5.png)和![math-20220320](https://user-images.githubusercontent.com/41580525/159164027-249b24a0-7c50-4b40-ae36-fbf6cc86f5fb.png)构成正交基，前提是它们是正交（成直角），且各自为单位长度，因此：
+
+![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159164100-79855980-44c0-4c99-b080-266b84506b2e.png)以及![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159164127-dcb7d4c9-ed75-41d9-96c4-744a598c34aa.png)
+
+在三维空间中，三个向量![math-20220320](https://user-images.githubusercontent.com/41580525/159164261-74426602-3378-45d9-b214-b18459f9cd3e.png)，![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159164273-c4508bde-24b2-49c3-8f48-54d4ac927bc9.png)和![math-20220320](https://user-images.githubusercontent.com/41580525/159164286-cd966837-1971-4e9e-8f4a-c33025a9140f.png)构成正交基，如果它们满足：
+
+![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159164315-87c88294-3237-4fef-a792-daabbbbd0c45.png)以及![math-20220320](https://user-images.githubusercontent.com/41580525/159164349-e5509583-199f-42cf-bf1a-0b61ae46d3bb.png)
+
+这个正交基是由右手法则得到的：
+
+![math-20220320](https://user-images.githubusercontent.com/41580525/159164424-3d4387f8-fa0e-49dd-bbaa-95267ff22675.png)
+
+否则，则是由左手法则得到的。
+
+  请注意，笛卡尔正则正交基只是无限多个可能正交基中的一个。它的特殊之处在于，它和它的隐式原点位置用于程序中的低级表示。因此，向量![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159164786-3acb42e7-bf12-4f54-9404-e8ba94c7822c.png)，![math-20220320](https://user-images.githubusercontent.com/41580525/159164797-e568aa73-7dc8-4f46-8905-f83c05984ec4.png)和![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159164813-37322c79-47f2-4398-9fc5-d313c8c5ab28.png)永远不会显式存储，规范原点位置o也不会显式存储。全局模型通常存储在该标准坐标系中，因此通常称为全局坐标系。然而，如果我们想使用另一个坐标系，它包含原点p和正交基向量![math-20220320](https://user-images.githubusercontent.com/41580525/159164939-4cdff06b-b083-42de-b3d2-010a678a8274.png)，![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159164945-fec26f17-7954-489b-9ac6-f6ba3ac70bb4.png)和![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159164949-80245bb3-d654-4424-9161-f5af90c99b32.png)，那么我们会显式存储这些向量，这种系统被称为参考系（coordinate frame）。例如，在飞行模拟器中，我们可能希望保持一个坐标系，原点位于飞机机头，正交基准与飞机对齐，同时，我们也将拥有主标准坐标系（图2.21），而与特定对象（如飞机）关联的坐标系通常称为局部坐标系。
+
+![image](https://user-images.githubusercontent.com/41580525/159165839-e5c08f9e-19b1-47e2-a2af-991a727eabce.png)图2.21，始终存在原点为o，正交基为![math-20220320](https://user-images.githubusercontent.com/41580525/159166027-dd06682f-3614-4512-af79-258551d1bdb9.png)，![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159166046-f28e2d31-fd32-4d97-8d19-6b6036877aa6.png)和![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159166060-5ac5648c-d432-4a35-b2ce-ffcec85316b9.png)的主坐标系或“标准”坐标系。该坐标系通常被定义为与全局模型对齐，因此通常被称为“全局”或“世界”坐标系。该原点和基向量从未被显式存储。所有其它向量的位置都存储在与全局坐标系相关的坐标中，与飞机相关联的坐标系（局部坐标系）显式存储于全局坐标系中。
+
+在低层次上，局部坐标被存储在标准坐标系中。例如，如果向量![math-20220320](https://user-images.githubusercontent.com/41580525/159166406-9c613ff4-b804-49a6-8935-b2543449d5d1.png)的坐标表示为![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159166485-076701e2-1cb3-42ff-9f7e-fd4d69fe5af5.png),则有:
+
+![math-20220320](https://user-images.githubusercontent.com/41580525/159166568-b4cd6076-d971-41d2-8ea4-c3acd7f70df1.png)
+
+一个局部坐标系的原点p隐式地包含了一个与标准原点的偏移：
+
+![math-20220320](https://user-images.githubusercontent.com/41580525/159166695-88081393-2bab-42ae-9bb1-8fa1fd078d2f.png)
+
+其中![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159166723-7b439c2d-fa21-4336-be2d-ab84a7dcf4fc.png)是点p在标准坐标系下的坐标。
+
+  注意，如果我们存储一个关于![math-20220320](https://user-images.githubusercontent.com/41580525/159166810-a5e16dca-f007-4d8f-a967-b2c63ecf9ccf.png)-![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159166812-e3a586e1-5588-4da8-90b1-d76b7fafca7b.png)-![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159166813-eb699a75-a0ef-4a9c-bda8-bfe4fb86e09b.png)坐标系的向量![math-20220320](https://user-images.githubusercontent.com/41580525/159166848-2df2c9bd-6e2c-4d3e-b88a-83c3862aa054.png)，我们存储一个三元组![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159166877-3bb6dbbd-e9c4-4641-ac12-33fc2c42b407.png)，那么我们可以将向量![math-20220320](https://user-images.githubusercontent.com/41580525/159166916-4c06be54-18e3-40f6-b71b-7c185eb55a37.png)的几何解释写为：
+  
+![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159167101-04de0727-9b2b-415c-8e76-d79e39fa4f41.png)
+
+要获得存储在![math-20220320](https://user-images.githubusercontent.com/41580525/159166810-a5e16dca-f007-4d8f-a967-b2c63ecf9ccf.png)-![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159166812-e3a586e1-5588-4da8-90b1-d76b7fafca7b.png)-![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159166813-eb699a75-a0ef-4a9c-bda8-bfe4fb86e09b.png)坐标系中的向量![math-20220320](https://user-images.githubusercontent.com/41580525/159167209-464af392-b15a-4367-be0a-b3917fe93d9a.png)的标准坐标，只需回想一下，![math-20220320](https://user-images.githubusercontent.com/41580525/159166810-a5e16dca-f007-4d8f-a967-b2c63ecf9ccf.png)，![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159166812-e3a586e1-5588-4da8-90b1-d76b7fafca7b.png)和![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159166813-eb699a75-a0ef-4a9c-bda8-bfe4fb86e09b.png)本身都已经存储在标准坐标系中，因此在显式计算中，表达式![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159167326-7e84971f-102b-4782-b2ea-c60289176c14.png)已经在标准坐标系中。为了获得存储在标准坐标系中的向量![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159167358-09640c7c-afc9-493d-85e0-f6e5266043ce.png)在局部坐标系![math-20220320](https://user-images.githubusercontent.com/41580525/159166810-a5e16dca-f007-4d8f-a967-b2c63ecf9ccf.png)-![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159166812-e3a586e1-5588-4da8-90b1-d76b7fafca7b.png)-![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159166813-eb699a75-a0ef-4a9c-bda8-bfe4fb86e09b.png)中的坐标，我们可以使用点积：
+
+![math-20220320](https://user-images.githubusercontent.com/41580525/159167774-dbb2a3b4-1988-4bd2-b363-223f4e96f29c.png)
+
+上式是正确的，因为对于![math-20220320](https://user-images.githubusercontent.com/41580525/159168078-bf23ccf6-da8d-489f-990d-b59e36f77411.png)，![math-20220320 (2)](https://user-images.githubusercontent.com/41580525/159168092-21c469fc-ca76-49d8-8aca-3a53441d121b.png)和![math-20220320](https://user-images.githubusercontent.com/41580525/159168099-a9bfeea0-b39a-407e-aa41-05e546268c74.png)我们可以知道：
+
+![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159168117-f1726876-c62a-410b-9f3f-a3e6cfcd9d36.png)
+
+我们可以将![math-20220320](https://user-images.githubusercontent.com/41580525/159168182-8a81a807-dfbf-49fe-8e48-63c9640a647f.png)单独拉出来计算：
+
+![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159168269-78d3084a-c652-47b6-addb-616f7a97638a.png)
+
+有这样的等式是因为![math-20220320](https://user-images.githubusercontent.com/41580525/159168339-a74a7b05-acc4-4ff9-b15f-e586310c05bc.png)，![math-20220320 (1)](https://user-images.githubusercontent.com/41580525/159168353-25a9faae-fdba-403d-86c2-ba59f829db1b.png)和![math-20220320](https://user-images.githubusercontent.com/41580525/159168363-411175b5-4dc5-4894-abd3-1d329a22d1cd.png)是两两正交的。
+
+  在7.2.1节和7.5节讨论了使用矩阵来进行坐标系的转化。
+
+[返回目录](#目录) [返回本章开头](#各种各样的数学) [返回本大节开头](#向量) [返回本小节开头](#正交基和坐标系)
+
+### 2.4.6
+### 从单个向量构造一组基
